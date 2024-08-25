@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Crystal brilliance_easy
   m_EditorClassIdentifier: 
   songID: 0
-  songName: Crystal brilliance_easy
+  songName: Crystal brilliance_Easy
   songLevel: 5
   songImage: {fileID: 0}

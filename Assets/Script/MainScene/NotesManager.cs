@@ -1,3 +1,5 @@
+//ƒm[ƒc‚ª—¬‚ê‚Ä‚­‚é‚Ì‚ª’x‚¯‚ê‚Îoffset‚ğ¬‚³‚­‚µA‘‚¯‚ê‚Î‘å‚«‚­‚·‚é
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;

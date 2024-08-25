@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: The Pulse of Awakening_easy
   m_EditorClassIdentifier: 
   songID: 1
-  songName: The Pulse of Awakening_easy
+  songName: The Pulse of Awakening_Easy
   songLevel: 9
   songImage: {fileID: 0}
