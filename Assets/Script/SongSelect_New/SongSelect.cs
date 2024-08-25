@@ -25,21 +25,155 @@ public class SongSelect : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (select > 9)
+            {
+                select -= 10;
+                SongUpdateALL();
+            }
+            else
+            {
+                select = 31;
+                SongUpdateALL();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (select < 39)
+            {
+                select += 10;
+                SongUpdateALL();
+            }
+            else
+            {
+                select = 0;
+                SongUpdateALL();
+            }
+        }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if (select < dataBase.songData.Length)
+            if (select < 9)
             {
-                select++;
-                SongUpdateALL();
+                //難易度easy譜面
+                if (select < 1)
+                {
+                    select++;
+                    SongUpdateALL();
+                    Debug.Log(select);
+
+                }
+                else
+                {
+                    select = 0;
+                    SongUpdateALL();
+                    Debug.Log("select");
+                }
+            }
+            else if (select < 19)
+            {
+                //難易度Normal用
+                if (select < 11)
+                {
+                    select++;
+                    SongUpdateALL();
+                    Debug.Log(select);
+
+                }
+                else
+                {
+                    select = 10;
+                    SongUpdateALL();
+                    Debug.Log("select");
+                }
+            }
+            else if (select < 29)
+            {
+                //難易度Expert用
+                if (select < 21)
+                {
+                    select++;
+                    SongUpdateALL();
+                    Debug.Log(select);
+
+                }
+                else
+                {
+                    select = 20;
+                    SongUpdateALL();
+                    Debug.Log("select");
+                }
+            }
+            else if (select < 39)
+            {
+                //難易度Master用
+                if (select < 31)
+                {
+                    select++;
+                    SongUpdateALL();
+
+                }
+                else
+                {
+                    select = 30;
+                    SongUpdateALL();
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (select > 0)
+            if (select < 9)
             {
-                select--;
-                SongUpdateALL();
+                if (select > 0)
+                {
+                    select--;
+                    SongUpdateALL();
+                    Debug.Log(select);
+                }
+                else
+                {
+                    select = 1;
+                    Debug.Log(select);
+                }
             }
+            else if(select < 19)
+            {
+                if (select > 10)
+                {
+                    select--;
+                    SongUpdateALL();
+                }
+                else
+                {
+                    select = 11;
+                }
+            }
+            else if (select < 29)
+            {
+                if (select > 20)
+                {
+                    select--;
+                    SongUpdateALL();
+                }
+                else
+                {
+                    select = 21;
+                }
+            }
+            else if (select < 39)
+            {
+                if (select > 30)
+                {
+                    select--;
+                    SongUpdateALL();
+                }
+                else
+                {
+                    select = 31;
+                }
+            }
+
+
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
