@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ public class Result : MonoBehaviour
     [SerializeField] TextMeshProUGUI greatText;
     [SerializeField] TextMeshProUGUI badText;
     [SerializeField] TextMeshProUGUI missText;
+    [SerializeField] Image songImage;
     private void OnEnable()
     {
         scoreText.text = GManager.instance.score.ToString();

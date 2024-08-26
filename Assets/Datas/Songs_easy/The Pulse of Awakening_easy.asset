@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songID: 1
   songName: The Pulse of Awakening_Easy
+  songDifficult: Easy
+  songNameopen: The Pulse of Awakening
   songLevel: 9
-  songImage: {fileID: 0}
+  songImage: {fileID: 21300000, guid: 7617b789081cd774295ffd112bd6d99f, type: 3}

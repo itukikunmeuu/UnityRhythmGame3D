@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songID: 0
   songName: Crystal brilliance_Easy
+  songDifficult: Easy
+  songNameopen: Crystal brilliance
   songLevel: 5
   songImage: {fileID: 0}

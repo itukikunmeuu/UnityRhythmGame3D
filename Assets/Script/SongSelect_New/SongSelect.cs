@@ -8,6 +8,7 @@ public class SongSelect : MonoBehaviour
     [SerializeField] SongDataBase dataBase;
     [SerializeField] TextMeshProUGUI[] songNameText;
     [SerializeField] TextMeshProUGUI[] songLevelText;
+    [SerializeField] TextMeshProUGUI[] songDifficult;
     [SerializeField] Image songImage;
 
     AudioSource audio;
@@ -195,7 +196,7 @@ public class SongSelect : MonoBehaviour
     {
         try
         {
-            songNameText[id + 2].text = dataBase.songData[select + id].songName;
+            songNameText[id + 2].text = dataBase.songData[select + id].songNameopen;
             songLevelText[id + 2].text = "Lv." + dataBase.songData[select + id].songLevel;
         }
         catch

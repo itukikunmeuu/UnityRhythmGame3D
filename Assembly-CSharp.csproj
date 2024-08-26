@@ -67,10 +67,12 @@
     <Compile Include="Assets\Script\MainScene\NotesManager.cs" />
     <Compile Include="Assets\Script\Result\Result.cs" />
     <Compile Include="Assets\Script\MainScene\Judge.cs" />
+    <Compile Include="Assets\Script\Title\ChangeColor.cs" />
     <Compile Include="Assets\Script\SongSelectScene\SpawnClones.cs" />
     <Compile Include="Assets\Datas\Script\DifficultData.cs" />
     <Compile Include="Assets\Script\SongSelectScene\jacket.cs" />
     <Compile Include="Assets\Datas\Script\DongDataBase.cs" />
+    <Compile Include="Assets\Script\Title\SceneChange.cs" />
     <Compile Include="Assets\Script\MainScene\MusicManager.cs" />
     <Compile Include="Assets\Script\SongSelectScene\DifficultyColor.cs" />
     <Compile Include="Assets\Script\MainScene\Right.cs" />
